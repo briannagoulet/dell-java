@@ -3,8 +3,6 @@ public class ParkingGarage {
 
 	//Attributes
 	public Car[] carsArray;
-	//public int capacity;
-	//public int spot;
 	
 	//constructor method
 	public ParkingGarage(int capacity) {
@@ -13,13 +11,23 @@ public class ParkingGarage {
 	
 	//method to add car to parking spot
 	public void park(Car car, int spot) {
-		carsArray[spot] = car;
+		try { if (!(carsArray[spot] == null)) {
+			System.out.println("Cannot place car in spot " + spot + " because it is taken."); }
+			else carsArray[spot] = car;
+		} catch(Exception e) {
+			System.out.println("Cannot place car in spot " + spot + " because it does not exist.");
+			} 
+
 	}
 	
 	//method to remove car from spot
 	public void vacate(int spot) {
-		carsArray[spot] = null;
-		
+		if (carsArray[spot] == null) {
+			System.out.println("Cannot remove car from spot " + spot + " because this parking spot is empty.");
+		}
+		else if (!(carsArray[spot] == null)) {
+			carsArray[spot] = null;
+		} 
 	}
 	
 	//method to print the list of all cars and descriptions

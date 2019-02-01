@@ -67,11 +67,19 @@ public class GarageManager {
 			car8.make = "Volvo";
 			car8.model = "CX-40";
 
+		//park and vacate car spaces
 		garage1.park(car1, 0);
 		garage1.park(car2, 2);
-		garage1.park(car3, 5);
+		garage1.park(car5, 2);
+		garage1.park(car3, 22);
 		garage1.vacate(5);
 		garage1.printInventory();
+		
+		garage2.park(car4, 3);
+		garage2.park(car5, 9);
+		garage2.park(car6, 7);
+		garage2.vacate(7);
+		garage2.printInventory();
 	}
 
 }
