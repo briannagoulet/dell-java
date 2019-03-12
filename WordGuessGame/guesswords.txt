@@ -1,0 +1,15 @@
+horse
+dog
+banana
+orange
+monkey
+elephant
+necklace
+mother
+megaphone
+office
+snake
+finger
+chicken
+parrot
+whale

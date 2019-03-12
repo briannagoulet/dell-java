@@ -42,7 +42,7 @@ public class RentableProgram {
 		System.out.println("Please enter a number of days: ");
 		int days = reader.nextInt();
 		System.out.println();
-		
+		//print list of all rentable items and prices
 		for (int i = 0; i < rentalList.length; i++) {
 			System.out.println(rentalList[i].getName() + ", price: $" + rentalList[i].getPrice(days)
 					+ " for " + days +" days.");
